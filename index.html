@@ -15,12 +15,42 @@
 </head>
 <body>
     <div id="sidebar" >
-        <button onclick="href='index.html';">Home</button>
+        <button id="homeBtn">Home</button>
+        <button id="projectsBtn">Projects</button>
+        <button id="contactMeBtn">Contact Me</button>
     </div>
 
-    <div id="open" class="block">
-            <h1>Amir<br>Radomislensky</h1>
-            <h2>A</h2>
+    <div id="homeBlock" class="block">
+        <h1>Amir<br> Radomislensky</h1>
+        <h2>   game developer<br>    python programmer</h2>
     </div>
+
+    <div id="projectsBlock" class="block">
+        <h1>Projects</h1>
+        <br>
+        <div id="projectsContainer">
+            <div class="projectsContainerItem" style="cursor: pointer;">
+                <img src="assets/TryToDieImg.png" alt="TryToDie" >
+                <h3>Try To Die</h3>
+            </div>
+            <div class="projectsContainerItem">EMPTY</div>
+            <div class="projectsContainerItem">EMPTY</div>
+            <div class="projectsContainerItem">EMPTY</div>
+            <div class="projectsContainerItem">EMPTY</div>
+            <div class="projectsContainerItem">EMPTY</div>
+        </div>
+
+
+    </div>
+
+    <div id="contactMeBlock" class="block">
+        <h1>Contact<br>Me</h1>
+        <br>
+        <input type="email">
+    </div>
+
+
+
+    <script src="js/index.js"></script>
 </body>
 </html>
