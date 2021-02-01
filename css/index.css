@@ -12,15 +12,18 @@ body {
 }
 
 h1{
-    line-height: 150px;
-    font-size: 150px;
+    /*line-height: 150px;*/
+    /*font-size: 150px;*/
+    font-size: 8vw;
+    line-height: 8vw;
     white-space: pre-wrap;
 
     margin: 0;
 }
 
 h2{
-    font-size: 80px;
+    /*font-size: 80px;*/
+    font-size: 5vw;
     white-space: pre-wrap;
 
     margin: 0;
@@ -34,7 +37,10 @@ h2{
     word-wrap: break-word;
 
     margin: 0;
+/*
     padding: 120px 20% 120px 120px;
+*/
+    padding: 10% 20% 10% 10%;
 
     overflow: hidden;
     min-height: x(any) px
@@ -83,8 +89,9 @@ h2{
 }
 #projectsContainer{
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: auto auto auto;
+    align-items: stretch;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 }
 .projectsContainerItem{
@@ -98,15 +105,14 @@ h2{
 
     padding: 20px;
 
-    height: 350px;
-    width: 350px;
+    height: 100%;
+    width: 100%;
 
-    transition: border 0.3s;
+    transition: color 0.3s, background 0.3s;
 }
 .projectsContainerItem:hover{
-    border-style: solid;
-    border-width: 5px;
-    border-color: #98C9A3;
+    background-color: #dde7c7;
+    color: #77bfa3;
 
 }
 .projectsContainerItem img{
@@ -121,7 +127,9 @@ h2{
 
 #contactMeBlock{
     background-color: #98C9A3;
+    background-color: #bfd8bd;
     color: #EDEEC9;
+    color: #77bfa3;
 }
 
 
