@@ -1,3 +1,8 @@
+var sidebar = document.getElementById("sidebar");
+
+var blocks = document.getElementsByClassName('block');
+
+
 var homeBlock = document.getElementById("homeBlock");
 var projectsBlock = document.getElementById("projectsBlock");
 var contactMeBlock = document.getElementById("contactMeBlock");
@@ -18,4 +23,12 @@ for(var i = 0; i< projects.length; i++)
 {
     projects[i].onclick = function(){console.log("Yo")}
     projects[i].style.cursor = "pointer";
+}
+
+//Integrating Mobile Accessibility
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    sidebar.style.display = 'none';
+    for(i = 0; i < blocks.length; i++) {
+        blocks[i].style.padding = '10%';
+    }
 }
