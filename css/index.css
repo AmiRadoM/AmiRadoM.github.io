@@ -80,6 +80,7 @@ h2{
 
 #projectsBlock{
     background-color: #dde7c7;
+    background-image: linear-gradient(180deg,#EDEEC9,#dde7c7 5%);
     color: #77bfa3;
 }
 #projectsContainer{
@@ -121,8 +122,8 @@ h2{
 
 
 #contactMeBlock{
-    background-color: #98C9A3;
     background-color: #bfd8bd;
+    background-image: linear-gradient(180deg,#dde7c7,#bfd8bd 20%);
     color: #EDEEC9;
     color: #77bfa3;
 }
